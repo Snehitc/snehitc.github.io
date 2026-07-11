@@ -74,9 +74,42 @@
             </ul>
           </div>
     
-          <div class="hero-buttons">
-            <button class="btn tab-link" data-tab="contact">Contact Me</button>
-            <button class="btn tab-link" data-tab="projects">View Projects</button>
+          <!-- Quick Access -->
+          <div class="quick-links">
+            <!-- Publications -->
+            <div class="quick-card tab-link"
+                 data-tab="research"
+                 onclick="goatcounter.count({ path: 'hero_publications' })">
+                <div class="quick-title">📄 Publications</div>
+                <div class="quick-subtitle">View Papers →</div>
+            </div>
+          
+            <!-- Projects -->
+            <div class="quick-card tab-link"
+                 data-tab="projects"
+                 onclick="goatcounter.count({ path: 'hero_projects' })">
+                <div class="quick-title">🚀 Projects</div>
+                <div class="quick-subtitle">Source Code →</div>
+            </div>
+          
+            <!-- CV -->
+            <a href="assets/Snehit_CV.pdf"
+               target="_blank"
+               class="quick-card"
+               onclick="goatcounter.count({ path: 'hero_cv' })">
+                <div class="quick-title">📄 CV</div>
+                <div class="quick-subtitle">Download →</div>
+            </a>
+          
+            <!-- GitHub -->
+            <a href="https://github.com/Snehitc"
+               target="_blank"
+               class="quick-card"
+               onclick="goatcounter.count({ path: 'hero_github' })">
+                <div class="quick-title">💻 GitHub</div>
+                <div class="quick-subtitle">Repositories →</div>
+            </a>
+          
           </div>
         </div>
       </div>
