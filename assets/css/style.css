@@ -169,7 +169,7 @@ body.dark-theme .profile-ring {
 /* Hero container */
 .hero-container {
   display: flex;
-  align-items:flex-start;
+  align-items:center;
   gap: 2rem;
   justify-content: center;
   padding: 2rem 1rem;
