@@ -74,7 +74,8 @@ body.dark-theme {
 }
 
 .navbar button:hover{
-    transform: translateY(-2px);
+    background:#ececec;
+    border-radius:8px;
 }
 
 main {
