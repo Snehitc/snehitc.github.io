@@ -206,8 +206,41 @@ body.dark-theme .profile-ring {
 }
 
 /* Hero buttons */
-.hero-buttons {
-  margin-top: 1rem;
+/* ===== Quick Access Cards ===== */
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.quick-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: inherit;
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
+.quick-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--link-color);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.quick-title{
+  font-size:1rem;
+  font-weight:700;
+  color:var(--link-color);
+}
+
+.quick-subtitle{
+  margin-top:6px;
+  color:#666;
+  font-size:.9rem;
 }
 
 .hero .btn, 
@@ -583,6 +616,20 @@ body.dark-theme .navbar button:hover{
     background:#2f2f2f;
 }
 
+body.dark-theme .quick-card{
+    background:#222;
+    border-color:#333;
+}
+
+body.dark-theme .quick-card:hover{
+    border-color:var(--link-color);
+    box-shadow:0 0 15px rgba(77,166,255,.18);
+}
+
+body.dark-theme .quick-subtitle{
+    color:#bbbbbb;
+}
+
 body.dark-theme .social-links a.github i {
   color: #f5f5f5; /* Lighter GitHub icon */
 }
@@ -669,6 +716,10 @@ body.dark-theme .social-links a.kaggle i {
     text-align: center;
   }
   
+  .quick-links{
+    grid-template-columns:1fr;
+}
+
   .explore-list {
     text-align: left;
     display: inline-block;
