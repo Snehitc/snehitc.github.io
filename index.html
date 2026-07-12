@@ -41,101 +41,88 @@
   <main>
     <section id="about" class="tab-content active">
       <div class="hero-container">
+    
+        <!-- LEFT COLUMN -->
         <div class="profile-section">
-            <div class="profile-ring">
-                <div class="profile-inner">
-                    <img src="assets/images/Snehit_ProfilePhoto.jpg"
-                         alt="Profile Picture"
-                         class="profile-pic">
-                </div>
+    
+          <div class="profile-ring">
+            <div class="profile-inner">
+              <img src="assets/images/Snehit_ProfilePhoto.jpg"
+                   alt="Profile Picture"
+                   class="profile-pic">
             </div>
+          </div>
+    
+          <!-- Quick Access -->
+          <div class="quick-links profile-links">
+    
+            <!-- Publications -->
+            <div class="quick-card tab-link"
+                 data-tab="research"
+                 onclick="goatcounter.count({ path: 'hero_publications' })">
+              <div class="quick-title">📄 Publications</div>
+              <div class="quick-subtitle">View Papers →</div>
+            </div>
+    
+            <!-- Projects -->
+            <div class="quick-card tab-link"
+                 data-tab="projects"
+                 onclick="goatcounter.count({ path: 'hero_projects' })">
+              <div class="quick-title">🚀 Projects</div>
+              <div class="quick-subtitle">Source Code →</div>
+            </div>
+    
+            <!-- CV -->
+            <a href="assets/files/CV_Snehit.pdf"
+               target="_blank"
+               class="quick-card"
+               onclick="goatcounter.count({ path: 'hero_cv' })">
+              <div class="quick-title">📄 CV</div>
+              <div class="quick-subtitle">Download →</div>
+            </a>
+    
+            <!-- GitHub -->
+            <a href="https://github.com/Snehitc"
+               target="_blank"
+               class="quick-card"
+               onclick="goatcounter.count({ path: 'hero_github' })">
+              <div class="quick-title">💻 GitHub</div>
+              <div class="quick-subtitle">Repositories →</div>
+            </a>
+    
+          </div>
+    
         </div>
+    
+        <!-- RIGHT COLUMN -->
         <div class="hero-text">
+    
           <h2>About Me</h2>
+    
           <p class="intro-text">
-            Hi, I’m <strong>Snehit Chunarkar</strong>, a PhD researcher in Machine Learning at NTHU, 
-            exploring <strong>Noise-Robust Speech Emotion Recognition (SER)</strong> and <strong>Multimodal Audio-Text Learning</strong>. <br>
-            🏆 ICASSP 2026 Grand Challenge [XACLE]: 2nd Place <br>
+            Hi, I’m <strong>Snehit Chunarkar</strong>, a PhD researcher in Machine Learning at NTHU,
+            exploring <strong>Noise-Robust Speech Emotion Recognition (SER)</strong> and
+            <strong>Multimodal Audio-Text Learning</strong>.<br>
+    
+            🏆 ICASSP 2026 Grand Challenge [XACLE]: 2nd Place<br>
             🚀 Building multimodal AI systems for real-world noisy environments
           </p>
     
           <div class="explore-section">
-            <h4>I’m particularly interested in:</h4>
+    
+            <h4>I'm particularly interested in:</h4>
+    
             <ul class="explore-list">
               <li>Speech & audio representation learning</li>
               <li>Multimodal Transformers and cross-modal fusion</li>
               <li>Emotion reasoning and context-aware AI</li>
               <li>Visualization of embeddings & interpretability</li>
             </ul>
+    
           </div>
     
-          <!-- Quick Access -->
-          <div class="quick-links">
-            <!-- Publications -->
-            <div class="quick-card tab-link"
-                 data-tab="research"
-                 onclick="goatcounter.count({ path: 'hero_publications' })">
-                <div class="quick-title">📄 Publications</div>
-                <div class="quick-subtitle">View Papers →</div>
-            </div>
-          
-            <!-- Projects -->
-            <div class="quick-card tab-link"
-                 data-tab="projects"
-                 onclick="goatcounter.count({ path: 'hero_projects' })">
-                <div class="quick-title">🚀 Projects</div>
-                <div class="quick-subtitle">Source Code →</div>
-            </div>
-          
-            <!-- CV -->
-            <a href="assets/files/CV_Snehit.pdf"
-               target="_blank"
-               class="quick-card"
-               onclick="goatcounter.count({ path: 'hero_cv' })">
-                <div class="quick-title">📄 CV</div>
-                <div class="quick-subtitle">Download →</div>
-            </a>
-          
-            <!-- GitHub -->
-            <a href="https://github.com/Snehitc"
-               target="_blank"
-               class="quick-card"
-               onclick="goatcounter.count({ path: 'hero_github' })">
-                <div class="quick-title">💻 GitHub</div>
-                <div class="quick-subtitle">Repositories →</div>
-            </a>
-          
-          </div>
         </div>
-      </div>
-    </section>
-
-
-
-    <section id="education" class="tab-content">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>PhD in Electrical Engineering (Ongoing) </h3>
-        <div class="edu-details">
-          <span class="college">National Tsing Hua University (NTHU)</span>
-          <span class="location">Hsinchu, Taiwan</span>
-        </div>
-      </div>
     
-      <div class="education-item">
-        <h3>Master’s in Instrumentation and Signal Processing</h3>
-        <div class="edu-details">
-          <span class="college">Indian Institute of Technology (IIT)</span>
-          <span class="location">Roorkee, India</span>
-        </div>
-      </div>
-    
-      <div class="education-item">
-        <h3>Bachelor’s in Instrumentation Engineering</h3>
-        <div class="edu-details">
-          <span class="college">Government College of Engineering</span>
-          <span class="location">Chandrapur, India</span>
-        </div>
       </div>
     </section>
 
