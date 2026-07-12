@@ -51,12 +51,7 @@ body.dark-theme {
   font-size: 1rem;
   color: var(--text-color);
 }
-/*
-.navbar button.active {
-  font-weight: bold;
-  border-bottom: 2px solid var(--link-color);
-}
-*/
+
 .navbar button.active {
     background: var(--link-color);
     color: white;
@@ -108,10 +103,11 @@ main section h2 {
 
 /* Profile section */
 .profile-section{
-    flex:0 0 170px;
+    flex:0 0 240px;
     display:flex;
     flex-direction:column;
     align-items:center;
+    margin-top:40px;      /* pushes photo slightly lower */
 }
 
 /* Profile picture */
@@ -167,18 +163,18 @@ body.dark-theme .profile-ring {
 
 
 /* Hero container */
-.hero-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px;
-    padding: 2rem 1rem;
+.hero-container{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:55px;
+    padding:2rem 1rem;
 }
 
 /* Smaller profile pic inside hero */
 .hero-container .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
 }
 
 /* Hero text */
@@ -208,6 +204,14 @@ body.dark-theme .profile-ring {
 
 /* Hero buttons */
 /* ===== Quick Access Cards ===== */
+.profile-links{
+    width:100%;
+    margin-top:28px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
 .quick-links {
   display: grid;
   grid-template-columns: repeat(2, minmax(180px, 1fr));
@@ -215,15 +219,16 @@ body.dark-theme .profile-ring {
   margin-top: 2rem;
 }
 
-.quick-card {
-  background: var(--card-bg);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 12px;
-  padding: 14px 18px;
-  text-decoration: none;
-  color: inherit;
-  transition: all .25s ease;
-  cursor: pointer;
+.quick-card{
+    background:var(--card-bg);
+    border:1px solid rgba(0,0,0,.08);
+    border-radius:10px;
+    padding:12px;
+    text-align:center;
+    text-decoration:none;
+    color:inherit;
+    transition:.25s;
+    cursor:pointer;
 }
 
 .quick-card:hover {
@@ -233,15 +238,15 @@ body.dark-theme .profile-ring {
 }
 
 .quick-title{
-  font-size:1rem;
+  font-size:.92rem;
   font-weight:700;
   color:var(--link-color);
 }
 
 .quick-subtitle{
-  margin-top:6px;
-  color:#666;
-  font-size:.9rem;
+  margin-top:5px;
+  color:#777;
+  font-size:.75rem;
 }
 
 
@@ -650,6 +655,7 @@ body.dark-theme .social-links a.kaggle i {
   .hero-container {
     flex-direction: column;
     align-items: center;
+    gap:30px;
   }
   
   .hero-text {
@@ -675,9 +681,11 @@ body.dark-theme .social-links a.kaggle i {
     text-align: center;
   }
   
-  .quick-links{
-    grid-template-columns:1fr;
-}
+  .profile-links{
+    grid-template-columns:repeat(2,1fr);
+    width:100%;
+    margin-top:25px;
+  }
 
   .explore-list {
     text-align: left;
