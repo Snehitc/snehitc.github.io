@@ -202,7 +202,26 @@
           </p>
         </div>
       </div>
-      
+
+      <div class="publication-box">
+        <div class="pub-header">
+          <a href="https://ieeexplore.ieee.org/document/11461274" target="_blank" class="pub-title">
+            Exploring Pretrained Audio-Text Encoders for Audio Moment Retrieval: DCASE 2026 Task 6
+          </a>
+          <p class="pub-authors">
+            <span class="authors"><strong>Snehit B. Chunarkar</strong>, Krishnagiri Hamza, Chi-Chun Lee</span>
+            <span class="conference">DCASE2026 Challenge</span>
+          </p>
+        </div>
+        <div class="pub-abstract">
+          <p>
+            We present our system submitted to DCASE 2026 Task 6: Audio Moment Retrieval (AMR), which aims to retrieve a temporally grounded moment within a long audio recording given a natural language query. Following the AM-DETR baseline framework, we adopt 
+            frame-level audio feature extraction by segmenting long recordings into non-overlapping one-second clips, yielding a temporally ordered sequence of clip-level embeddings. Building on this, our primary contribution is a systematic investigation of 
+            pretrained audio and text encoders as replacements for the baseline MS-CLAP features, including M2D-CLAP and LAION-CLAP for both audio and text. The selected feature representations are fused into an ensemble and fed to an AM-DETR-based retrieval head 
+            for temporal boundary regression. We further incorporate frame masking during training and an IoU-based loss to improve localisation. Our system achieves a Recall1@0.7 score of 26.43 on the CASTELLA test split, surpassing the baseline score of 13.59.
+          </p>
+        </div>
+      </div>
       
       <div class="publication-box">
         <div class="pub-header">
