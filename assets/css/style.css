@@ -75,7 +75,7 @@ body.dark-theme {
 
 main {
   padding: 2rem;
-  max-width: 900px;   /* keeps content readable */
+  max-width: 1200px;   /* keeps content readable */
   margin: auto;       /* centers it horizontally */
 }
 
