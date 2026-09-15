@@ -204,32 +204,6 @@
         </div>
       </div>
 
-      
-      <div class="publication-box">
-        <div class="pub-header">
-          <a href="https://doi.org/10.13140/RG.2.2.34477.45282" target="_blank" class="pub-title">
-            Structured Event-to-Text Generation for Zero-Shot Audio Description: A Prompt Study Across LLM Sizes
-          </a>
-          <p class="pub-authors">
-            <span class="authors"><strong>Snehit B. Chunarkar</strong>, Chi-Chun Lee</span>
-            <span class="conference">Preprint on ResearchGate</span>
-          </p>
-        </div>
-        <div class="pub-abstract">
-          <p>
-            Automated audio description systems typically require costly fine-tuning on paired audio-caption datasets. We investigate a zero-shot alternative: a structured cascade pairing a pretrained sound event detection (SED) model with an off-the-shelf 
-            small language model (LLM) to generate free-form temporal descriptions of audio scenes, without additional training. Sound events are detected using PretrainedSED and converted into structured timestamped tuples, then passed to an LLM under one of 
-            four prompt formats: flat list, temporal narrative, scene-structured, and chain-of-thought (CoT). We evaluate this pipeline across five LLMs from 135M to 1.7B parameters (SmolLM2 and Qwen2.5 families), measuring how prompt structure and model scale 
-            affect description faithfulness. Since no reference captions exist for this setting, we introduce a referencefree protocol combining semantic temporal ordering accuracy (ToA), a grounding precision-recall-F1 score via optimal bipartite matching 
-            between text mentions and detected labels, and a length-normalized hallucination density (HD) that isolates ungrounded content from verbosity. Results show prompt structure, not model scale, dominates description quality: a 0.5B model with structured 
-            prompting outperforms a 1.5B model from the same family across every metric. We further observe a consistent trade-off: concise flat-list prompts yield the highest grounding F1, while temporal and CoT prompts achieve broader coverage and lower 
-            hallucination density per word at the cost of conciseness. These findings suggest that prompt engineering, not parameter count, is the primary lever for improving temporal grounding and factual reliability in training-free audio description pipelines. 
-            We release our evaluation code and prompt templates to support further study of zero-shot SED-to-text cascades.
-          </p>
-        </div>
-      </div>
-
-      
       <div class="publication-box">
         <div class="pub-header">
           <a href="https://dcase.community/documents/challenge2026/technical_reports/DCASE2026_Chunarkar_82_t6.pdf" target="_blank" class="pub-title">
@@ -270,6 +244,31 @@
             with crawled information of real-world user behaviors over time. This method helps create a realistic large-scale dataset, and we further evaluate it through perceptual listening tests. This neighborhood-based 
             data generation opens up novel opportunities to advance user-centered applications with automated acoustic understanding. For example, to develop real-world technology to model a user’s speech data over a day, one can imagine 
             utilizing this dataset as the user’s speech samples would modulate by diverse sources of acoustics surrounding linked across sites and temporally by natural behavior dynamics at each location over time.
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="publication-box">
+        <div class="pub-header">
+          <a href="https://doi.org/10.13140/RG.2.2.34477.45282" target="_blank" class="pub-title">
+            Structured Event-to-Text Generation for Zero-Shot Audio Description: A Prompt Study Across LLM Sizes
+          </a>
+          <p class="pub-authors">
+            <span class="authors"><strong>Snehit B. Chunarkar</strong>, Chi-Chun Lee</span>
+            <span class="conference">Preprint on ResearchGate</span>
+          </p>
+        </div>
+        <div class="pub-abstract">
+          <p>
+            Automated audio description systems typically require costly fine-tuning on paired audio-caption datasets. We investigate a zero-shot alternative: a structured cascade pairing a pretrained sound event detection (SED) model with an off-the-shelf 
+            small language model (LLM) to generate free-form temporal descriptions of audio scenes, without additional training. Sound events are detected using PretrainedSED and converted into structured timestamped tuples, then passed to an LLM under one of 
+            four prompt formats: flat list, temporal narrative, scene-structured, and chain-of-thought (CoT). We evaluate this pipeline across five LLMs from 135M to 1.7B parameters (SmolLM2 and Qwen2.5 families), measuring how prompt structure and model scale 
+            affect description faithfulness. Since no reference captions exist for this setting, we introduce a referencefree protocol combining semantic temporal ordering accuracy (ToA), a grounding precision-recall-F1 score via optimal bipartite matching 
+            between text mentions and detected labels, and a length-normalized hallucination density (HD) that isolates ungrounded content from verbosity. Results show prompt structure, not model scale, dominates description quality: a 0.5B model with structured 
+            prompting outperforms a 1.5B model from the same family across every metric. We further observe a consistent trade-off: concise flat-list prompts yield the highest grounding F1, while temporal and CoT prompts achieve broader coverage and lower 
+            hallucination density per word at the cost of conciseness. These findings suggest that prompt engineering, not parameter count, is the primary lever for improving temporal grounding and factual reliability in training-free audio description pipelines. 
+            We release our evaluation code and prompt templates to support further study of zero-shot SED-to-text cascades.
           </p>
         </div>
       </div>
